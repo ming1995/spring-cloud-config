@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring-cloud?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: '{cipher}ce09acdb897124a5ab2636fbd83dc229073456093e62bd64090c8b30309bf28f'
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 50
+    minIdle: 10
+    maxActive: 300
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    jpa.database: mysql
+    jpa.show-sql: true
+    jpa.hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    jpa.properties.hibernate.enable_lazy_load_no_trans: true
+
+
