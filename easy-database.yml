@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/spring-cloud?useSSL=false&useUnicode=true&characterEncoding=utf-8
     username: root
-    password: '{cipher}ce09acdb897124a5ab2636fbd83dc229073456093e62bd64090c8b30309bf28f'
+    password: '{cipher}82650f8926fc507b1f28495345730373cada1c9dbf00cac6c3ecb5d3236c3e9b'
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 50
     minIdle: 10
